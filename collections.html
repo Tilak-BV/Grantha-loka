@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Salsa', cursive;
+            font-size: medium;
+            background: #fff;
+        }
+
+        .nav{
+            position: relative;
+            right: 0;
+            padding: 15px;
+            height: 8vh;
+            display: flex;
+            justify-content:right;
+            background: #494e5c;
+        }
+        .modules{
+            position: absolute;
+            justify-content: center;
+            right: 22rem;
+            font-size: 1.25em;
+            top: 30px;
+        }
+       
+        .nav a{
+            margin: 0 0 0 20px;
+            padding: 8px 10px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: color 1s ease;
+        }
+        #lout{
+            margin-top: 5px;
+            padding: 8px 10px;
+            font-size: 1.25em;
+        }
+        .nav a:hover{
+            color: #fff;
+            background-color: black;
+            transition: 1.5s ease;
+        }
+        .nav h3{
+            position: absolute;
+            background-image: url(img/logo.png);
+            background-size:200px;
+            background-repeat: no-repeat;
+            width: 255px;
+            height: 100px;
+            left: 10px;
+            top: 3px;
+            margin: 0 0 0 20px;
+            font-size: 25px;
+            font-weight:bolder;
+        }
+        
+        h3 img{
+            display: flex;
+            width: 250px;
+        }
+        
+        .banner1{
+            background-image: url(img/banner1.jpg);
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            background-size: 1363px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: -60px;
+        }
+        .head{
+            position: absolute;
+            padding: 20px;
+            font-size: 2.5em;
+            font-weight: 600;
+            left:450px;
+            top: 390px;
+        }
+        
+        .genres{
+            position: relative;
+            width: 1270px;
+            height: 30rem;
+            top: 350px;
+            left: 40px;
+        }
+       
+        .genres span{
+            position: absolute;
+            padding: 20px;
+            font-size: 1.5rem;
+            top: 20px;
+            left: 25px;
+        }
+        .box{
+            position: absolute;
+            top: 100px;
+            left: 40px;
+            width: 200px;
+            height: 300px;
+            background: cornsilk;   
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            border: 3px solid #333;
+            transition: all ease 1s;
+        }
+        #b2,#m2,#n2{
+            left: 290px;
+        }
+        #b3,#m3,#n3{
+            left: 540px;
+        }
+        #b4,#m4,#n4{
+            left: 790px;
+        }
+        #b5,#m5,#n5{
+            left: 1040px;
+        }
+        .box img{
+            width: 200px;
+            height: 300px;
+        }
+        label{
+            position:absolute;
+            font-size: 20px;
+            width: 200px;
+            display:flexbox;
+            align-items: center;
+            top:320px;
+            left: 6px;
+            color: #000;
+        }
+        .box:hover{
+            top: 98px;
+            transform:scale(1.1);
+            box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+            transition: 0.5s ease-in-out;
+        }
+        .banner{
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            margin-top: 400px;
+            background: url(img/png_20230626_080353_0000.png);
+            background-size: cover;
+
+        }
+        /*footer*/
+        .contain{
+            background: black;
+            box-sizing: border-box;
+            color: #fff;
+            position: relative;
+            padding: 30px 20px;
+            margin-top: 700px;
+        }
+
+.contain ul,li,a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.contain div{
+    display: inline-block;
+    width: 350px;
+}
+
+.contain .name{
+    padding: 5px 40px;      
+}
+
+.name h2{
+    margin-bottom: 20px; 
+    font-size:28px;
+    font-weight:500; 
+    margin-top:10px;
+}
+.name h2,li,h3{
+    margin-bottom: 10px;
+}
+.name span{
+    color: aqua;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.name h3{
+    font-size: 14px;
+    font-style: oblique;
+    color: #b5b3b3;
+    padding-top: 15px;
+}
+.links li {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    top: 100px;
+    left: 60px;
+}
+
+.details{
+    position: absolute;
+    font-size: 1rem;
+    top: 40px;
+    right: 470px;
+}
+.details li{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.details span{
+    top:3px;
+    margin-left: 10px;
+
+}
+.about{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+}
+.about h2{
+    top: 10px;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.about p{
+    margin: 10px 0;
+    font-size: 14px;
+}
+   
+.about li {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    top: 135px;
+    left: 0px;  
+}
+.about .icons{
+    margin-right: 35px; 
+    margin-top: -2px;
+}
+.uil{
+    color: #fff;
+    display:flex;
+    font-size: 24px;
+    position: absolute;
+} 
+.uil:hover{
+    color: #f43343;
+    margin-top: -4px;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h3></h3>
+        <div class="modules">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="shop1.php">Shopping</a>
+            <a href="review.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </div>            
+        <a href="logout.php" id="lout">LogOut</a>
+    </div> 
+
+    <div class="banner1">
+            
+    </div>
+
+    <div>
+        <span class="head">Available Genres</span>
+        
+        <div class="genres" id="g1">
+            <span>FICTIONAL</span>
+            <div class="box" id="b1"><a href="product.html"><img src="img/b2.jpg" alt=""><label>The Skylight Operation</label></a></div>
+            <div class="box" id="b2"><img src="img/b5.png" alt=""><label>Swords And Shields</label></div>
+            <div class="box" id="b3"><img src="img/b1.jpg" alt=""><label>A Conjuring Of Ravens</label></div>
+            <div class="box" id="b4"><img src="img/b4.jpg" alt=""><label>Tess Of The Road</label></div>
+            <div class="box" id="b5"><img src="img/b3.png" alt=""><label>Ill Flame</label></div>
+        </div>
+
+        <div class="genres" id="g2">
+            <span>INDIAN MYTHOLOGY</span>
+            <div class="box" id="m1"><a href="product1.html"><img src="img/m1.jpg" alt=""><label>Chola Adventure</label></a></div>
+            <div class="box" id="m2"><img src="img/m2.jpg" alt=""><label>Draupadi</label></div>
+            <div class="box" id="m3"><img src="img/m3.jpg" alt=""><label>Sita</label></div>
+            <div class="box" id="m4"><img src="img/m4.jpg" alt=""><label>The Thirteenth Day</label></div>
+            <div class="box" id="m5"><img src="img/m5.jpg" alt=""><label>Finding Radha</label></div>
+        </div>
+
+        <div class="genres" id="g3">
+            <span>NOVELS</span>
+            <div class="box" id="n1"><a href="product2.html"><img src="img/n1.png" alt=""><label>How Do You Live?</label></a></div>
+            <div class="box" id="n2"><img src="img/n2.png" alt=""><label>What About Will</label></div>
+            <div class="box" id="n3"><img src="img/n3.jpg" alt=""><label>Stalking The Moon</label></div>
+            <div class="box" id="n4"><img src="img/n4.png" alt=""><label>All Around The Moon</label></div>
+            <div class="box" id="n5"><img src="img/n5.jpg" alt=""><label>The Forest</label></div>
+        </div>
+
+        <div class="banner">
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="contain">
+            <div class="name">
+                <h2>Grantha <span>Loka</span> </h2>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home |</a>
+                            <a href="collections.html">Collections |</a>
+                            <a href="shop1.php">Shop |</a>
+                            <a href="review.html">Reviews </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>Copyright 2023 <b>Grantha Loka.</b> All rights resevered. </h3>
+            </div>
+            <div class="details">
+                <ul>
+                    <li>J.P Nagar <span>Bengaluru</span></li>
+                    <li>+91 7337887531</li>
+                    <li>xyz@gmail.com</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ullam dicta harum beatae tempora deleniti
+                    quo quod expedita <a href="about.html" style="font-size: 18px; text-decoration: underline; color: cyan;">Read More</a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="">Follow Us</a>
+                        <a href="" class="icons"><i class="uil uil-facebook"></i></a>
+                        <a href="" class="icons"><i class="uil uil-instagram"></i></a>
+                        <a href="" class="icons"><i class="uil uil-linkedin"></i></a>
+                        <a href="" class="icons"><i class="uil uil-twitter-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

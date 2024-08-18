@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+      
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-family: 'Salsa', cursive;
+            background: #4a4949;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            font-size: medium;
+            
+        }
+        .nav{
+            position: relative;
+            right: 0;
+            padding: 15px;
+            height: 8vh;
+            display: flex;
+            justify-content:right;
+            background: #494e5c;
+        }
+        .modules{
+            position: absolute;
+            justify-content: center;
+            right: 26rem;
+            font-size: 1.25em;
+            top: 30px;
+        }
+        .nav a{
+            margin: 0 0 0 20px;
+            padding: 8px 10px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: color 1s ease;
+        }
+        .nav a:hover{
+            color: #fff;
+            background-color: black;
+            transition: 1.5s ease;
+        }
+        .nav h3{
+            position: absolute;
+            background-image: url(img/logo.png);
+            background-size:200px;
+            background-repeat: no-repeat;
+            width: 255px;
+            height: 100px;
+            left: 10px;
+            top: 3px;
+            margin: 0 0 0 20px;
+            font-size: 25px;
+            font-weight:bolder;
+        }
+
+        h3 img{
+            display: flex;
+            width: 250px;
+        }
+        .login-nav{
+            position: absolute;
+            justify-content: right;
+            right: 20px;
+            font-size: 1.25em;
+            top: 30px;
+        }
+        .player{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            position: relative;
+            z-index: 0;
+        }
+        .player .video-container video{
+            position: absolute;
+            top: 0; left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .player .overlay {
+            position: absolute;
+            width: 1000px;
+            height: 580px;
+            background-image: url(img/overlay.png);
+            background-position-y: -150px;
+            background-size: cover;
+            mix-blend-mode: lighten;
+        }
+        
+        .contain{
+            background: black;
+            box-sizing: border-box;
+            color: #fff;
+            position: relative;
+            padding: 30px 20px;
+            margin-top: 0px;
+        }
+
+        .contain ul,li,a{
+            list-style: none;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .contain div{
+            display: inline-block;
+            width: 350px;
+        }
+
+        .contain .name{
+            padding: 5px 40px;      
+        }
+        .name h2,li,h3{
+            margin-bottom: 10px;
+        }
+        .name span{
+            color: aqua;
+            top: 35px;
+            margin-left: 5px;
+        }
+        .name h3{
+            font-size: 14px;
+            font-style: oblique;
+            color: #b5b3b3;
+            padding-top: 15px;
+        }
+        .links li {
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            top: 80px;
+            left: 60px;
+        }
+
+        .details{
+            position: absolute;
+            font-size: 1rem;
+            top: 40px;
+            right: 450px;
+        }
+        .details li{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .details span{
+            top:3px;
+            margin-left: 10px;
+        
+        }
+        .about{
+            position: absolute;
+            top: 30px;
+            right: 100px;
+        }
+        .about p{
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .about li {
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 10px;
+            top: 110px;
+            left: px;  
+        }
+        .about .icons{
+            margin-right: 35px; 
+            margin-top: -2px;
+        }
+        .uil{
+            color: #fff;
+            display:flex;
+            font-size: 24px;
+            position: absolute;
+        } 
+        .uil:hover{
+            color: #f43343;
+            margin-top: -4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h3></h3>
+        <div class="modules">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="shop1.php">Shopping</a>
+            <a href="review.html">Reviews</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="login-nav">
+            <a href="signin.html">Register</a>
+            <a href="login.html">Login</a>            
+        </div>
+    </div>
+    <section>
+        <div class="player">
+            <div class="video-container">
+                <video src="video/book.mp4" id="video-slider" loop autoplay muted></video>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="contain">
+            <div class="name">
+                <h2>Grantha <span>Loka</span> </h2>
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home |</a>
+                            <a href="collections.html">Collections |</a>
+                            <a href="shop1.php">Shop |</a>
+                            <a href="review.html">Reviews </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>Copyright 2023 <b>Grantha Loka.</b> All rights resevered. </h3>
+            </div>
+            <div class="details">
+                <ul>
+                    <li>J.P Nagar <span>Bengaluru</span></li>
+                    <li>+91 7337887531</li>
+                    <li>xyz@gmail.com</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio ullam dicta harum beatae tempora deleniti
+                    quo quod expedita <a href="about.html" style="font-size: 18px; text-decoration: underline; color: cyan;">Read More</a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="">Follow Us</a>
+                        <a href="" class="icons"><i class="uil uil-facebook"></i></a>
+                        <a href="" class="icons"><i class="uil uil-instagram"></i></a>
+                        <a href="" class="icons"><i class="uil uil-linkedin"></i></a>
+                        <a href="" class="icons"><i class="uil uil-twitter-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

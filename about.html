@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>About</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+      *{
+    margin: 0px;
+    padding: 0px;
+    font-size: 'Salsa', cursive;
+    box-sizing: border-box;
+}
+body{
+    background: #666;
+}
+.hero{
+    background: #fff;
+    overflow: hidden;
+}
+
+.heading{
+    background: url("img/heading-bg.webp"), no-repeat;
+    min-height:40vh;
+    display: flex;
+    flex-flow: column;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+}
+.heading h1{
+    font-size: 5rem;
+    font-size: 'Salsa', cursive;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content{
+    position: relative;
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation:fadeInUp 2s ease;
+}
+
+.hero-content button{
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(to right,#304352 0%,#d7d2cc 51%,#304352 100%);
+    background-size: 200% auto;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ;
+    left: 200px;
+    top: 570px;
+}
+
+.hero-content button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.1);
+    
+}
+
+.hero-content h2{
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+.hero-content p{
+    font-size: 24px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+pre{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Salsa', cursive;
+    width: 200px;
+}
+.hero-image{
+    flex: 1;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    animation:fadeInRight 2s ease;
+}
+
+img{
+    width: 100%;
+    height:auto ;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+@media screen and (max-width:768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+
+    }
+    .hero{
+        margin: 0px;
+
+
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .hero-image{
+        width: 100%;
+
+    }
+}
+@keyframes fadeInUp{
+   0%{
+opacity: 0;
+transform: translateY(50px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        
+            }
+}
+@keyframes fadeInRight{
+    0%{
+ opacity: 0;
+ transform: translateX(-50px);
+ 
+     }
+     100%{
+         opacity: 1;
+         transform: translateX(0px);
+         
+             }
+ }
+
+
+ .shero{
+    background-color: #f8f8f8;
+    font-family: 'Salsa', cursive;
+    overflow: hidden;
+}
+
+.scontainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    margin: 65px auto;
+}
+
+.shero-content{
+    position: absolute;
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation:fadeInDown 2s ease;
+    right: -50px;
+    top: 10px;
+}
+
+.shero-content h2{
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.shero-content p{
+    font-size: 24px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.shero-image{
+    position: absolute;
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInLeft 2s ease;
+    left:10px;
+}
+
+img{
+    width: 100%;
+    height:auto ;
+    
+    border-radius: 10px;
+}
+
+@media screen and (max-width:768px){
+       .shero{
+        margin: 0px;
+    }
+    .scontainer{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .shero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .shero-content h2{
+        font-size: 30px;
+
+    }
+    .shero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .shero-image{
+        width: 100%;
+
+    }
+}
+@keyframes fadeInDown{
+   0%{
+opacity: 0;
+transform: translateY(-50px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+        
+            }
+}
+@keyframes fadeInLeft{
+    0%{
+ opacity: 0;
+ transform: translateX(50px);
+ 
+     }
+     100%{
+         opacity: 1;
+         transform: translateX(0px);
+         
+             }
+ }
+
+   </style>
+</head>
+<body>
+   <section class="hero"> 
+      <div class="heading">
+         <h1 style="font-family:'Salsa', cursive;">ABOUT US</h1>
+      </div>
+      <div class="container">
+         <div class="hero-content" style="font-family:'Salsa', cursive;">
+         <h2>WELCOME TO GRANTHA LOKA</h2>
+         <p> Grantha Loka was founded in 2023 by two book lovers who wanted to create a space where people could come to discover new books and connect with other book lovers. 
+            Grantha Loka is a leading online book store, offering a wide variety of books from all genres. 
+            Whether you're looking for the latest bestseller or a classic novel, you're sure to find it at Grantha Loka.
+            Discover the latest exploration of books with our team of experts. We curate the finest selection of books to help you stay ahead of the curve. 
+            <pre>VISIT OUR WEBSITE TODAY AND START
+                EXPLORING OUR EXTENSIVE SELECTION OF BOOKS!</pre>
+         </p>
+         <button class="cta-button"><a href="collections.html">EXPLORE MORE</a></button>
+      </div>
+      <div class="hero-image">
+         <img src="img/us.jpg">
+      </div>
+      </div>
+   </section>  
+   <section class="shero">
+      <div class="scontainer">
+         <div class="shero-content">
+            <h2>Grantha-Loka:Your One-Stop Shop for Books</h2>
+         <p> Our website is easy to use and navigate, so you can find the books you're looking for quickly and easily. 
+            We also offer a variety of features to make your shopping experience even more enjoyable.
+            We're committed to providing our customers with the best possible shopping experience, and we're confident that you'll be happy with your purchase from Grantha Loka. 
+            We believe that books can open up new worlds and inspire us to learn and grow.
+         </p>
+      </div>
+      <div class="shero-image">
+         <img src="img/about.jpg">
+      </div>
+      </div>
+   </section>
+</body>
+</html>

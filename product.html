@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+        *{
+            padding: 0;margin: 0;
+        }
+        body{
+            padding: 20px;
+            font-family: 'Salsa', cursive;
+            background-color: #fff;
+        }
+        .container{
+            position: relative;
+            height: 100vh;
+        }
+        button{
+            position: absolute;
+            left: 30px;
+            top: 0px;
+            padding: 30px;
+            background: #ffffff;
+            border: none;
+            outline: none;
+        }
+    
+        .section1{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 80px;
+            top: 50px;
+        }
+        .section1 img{
+            width: 350px;
+            height: 450px;
+            border-radius: 10px;
+        }
+        .section2{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            padding: 15px 10px;
+            margin-top: 20px;
+            display: flexbox;
+            align-items:center;
+            justify-content: center;
+            left: 680px;
+            top: 50px;
+        }
+        .section2 span{
+            display: block;
+            padding-bottom: 10px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .submit{
+            position: absolute;
+            top: 570px;
+            left: 540px;
+            cursor: pointer;
+            padding: 10px 20px;
+            background: #f43343;
+            font-family: 'Salsa', cursive;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .stars i{
+            font-size: 25px;
+            padding-bottom: 15px;
+        }
+        .stars i label{
+            font-size: 26px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        .submit a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .price h4{
+            display: flex;
+        }
+        .price h2{
+            margin-top: -5px;
+            padding-bottom: 10px;
+        }
+        .price span{
+            text-decoration: line-through; 
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 5px;
+        }
+        .preview span,p{
+            display: grid;
+        }
+        .fas,.far{
+            color: yellowgreen;
+        }
+        .uil{
+            color:#000;
+            display:flex;
+            font-size: 28px;
+            position: absolute;
+            top: 490px;
+            left: 690px;
+        }
+        .uil-truck{
+            top: 530px;
+        }
+        .uil-sign-in-alt{
+            font-size: 60px;
+            top: 0;
+            left: 0;
+        }
+        .about label{
+            position: relative;
+            top: 493px;
+            left: 730px;
+            font-size: 22px;
+        }
+        .about #l1{
+            top: 530px;
+            left: 578px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button><a href="collections.html"><i class="uil uil-sign-in-alt"></i></a></button>
+            <div class="section1">
+                <img src="img/b2.jpg" alt="">
+            </div>
+            <div class="section2">
+                <span>The Skylight Operation</span>
+                <div class="stars">
+                    
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"><label>4.5/5</label></i>
+                        
+                </div>
+                <div class="price">
+                    <h4>Old Price:<span >₹699</span></h4>
+                    <h2>New Price: ₹569</h2>
+                </div>
+                <div class="author">
+                    <span>Author Name:- Herper Weston</span>
+                </div>
+                <div class="preview">
+                    <span>Preview :-</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi vero deleniti rerum repellat consectetur voluptatibus vel sunt vitae beatae.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti distinctio, in accusamus libero quo praesentium, sequi quod molestias, excepturi aliquid repudiandae veritatis maxime. Totam incidunt cum obcaecati rerum at!</p>
+                </div>
+            </div>
+            <div class="about">
+                <label>Stock Available</label>
+                <label id="l1">Free Shipping</label>
+                <i class="uil uil-truck-loading"></i>
+                <i class="uil uil-truck"></i>
+            </div>
+            <button class="submit"><a href="shop1.php">Shop now</a></button>
+    </div>
+
+
+
+</body>
+</html>
